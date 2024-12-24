@@ -1,0 +1,53 @@
+pdf query with langchain and cassandradb- platform datastackx, creates db in cloud, perform vector search,
+qa app, from huge pdf=vector search
+
+
+
+pdf,any size,pages ---- read the document ----- text chunks(1 to n packets) --- each chunks converted to    
+                                                                                text embeddings(using openai embedding ie text into vectors)
+                                                                                because when we convert text to vectors, we can perform classification, similarity algo etc.
+                                                                                |
+                                                                                |
+                                                                                |
+                                                                                huge pdf, vector size is more, so we store in vectordb(cassandradb)
+                                                                                                      (nosql apache database, fast)
+
+human - text query related to pdf document - similarity search along with text embeddings, gets specific response.
+
+-----------------------------------------------------
+
+llama2 - facebook, meta, opensource llm 
+
+research paper key points: 7b, 13b, 70b parameters, context length=4096
+pretrained on 2trilion tokens
+benchmarks=mmlu(human level understanding, this is more), humaneval(with respect to writing code, this is less)
+opensource innovation to ai.
+how trained, datapoints etc.
+public data is used, no personal data, nvidia(A100) gpu will be used to training.
+standard transformer architecture is used.
+reinforcement learning is used(RLHF), supervised finetuning(SFT)
+
+apply, download llama2:
+huggingface: usage from this
+end2end: blog generation: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
